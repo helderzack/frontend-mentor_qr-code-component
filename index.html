@@ -29,11 +29,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 400px;
+      width: 25rem;
       display: flex;
       flex-direction: column;
-      border-radius: 15px;
-      padding: 20px;
+      border-radius: 0.938rem;
+      padding: 1.25rem;
       text-align: center;
       box-shadow: 2px 2px 10px hsl(220, 15%, 55%);
     }
@@ -50,6 +50,53 @@
     p {
       font-size: 15px;
       color: hsl(220, 15%, 55%);
+    }
+
+    /* Really small devices */
+    @media screen and (max-width: 280px) {
+      .card {
+        width: 15rem;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    /* Mobile devices */
+    @media screen and (320px <= width <= 480px) {
+      .card {
+        width: 20rem;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+    }
+
+    /* Small screens, laptops */
+    @media screen and (height <= 650px) {
+      .card {
+        width: 20rem;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (height >= 1081px) {
+      .card {
+        width: 40rem;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
